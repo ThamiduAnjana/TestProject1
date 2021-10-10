@@ -9,7 +9,7 @@ function App() {
   const [tp, setTP] = useState("");
 
   const submitCustomer = ()=>{
-    Axios.post('https://mysql-deploy-testpro.herokuapp.com//api/insert',{
+    Axios.post('https://testproject-server.herokuapp.com/api/insert',{
       cus_name:name,
       cus_tp:tp,
     }).then(()=>{
